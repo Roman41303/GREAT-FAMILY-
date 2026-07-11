@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREAT FAM</title>  
+    <meta name="description" content="በዚህ website እንዴት በ poppo live ገንዘብ እንደሚሰራ ደረጃ በደረጃ በ video እና በምስል የተደገፈ ትምህርት ይሰጣል አሁኑኑ ተጭነው ከቤቶ ተቀምጠው እንዴት ገንዘብ እንደሚሰራ ተመልክተው አሁኑን መቀላቀል ይችላሉ።">
+    <meta name="author" content="WEBSITE CREATOR AGENT NAHOM">
+    
+    <meta property="og:title" content="GREAT FAM">
+    <meta property="og:description" content="በዚህ website እንዴት በ poppo live ገንዘብ እንደሚሰራ ደረጃ በደረጃ በ video እና በምስል የተደገፈ ትምህርት ይሰጣል አሁኑኑ ተጭነው ከቤቶ ተቀምጠው እንዴት ገንዘብ እንደሚሰራ መመልከቱ ይችላሉ እናንተም ኑ ከኛ ጋር ስሩ ።">
+    <meta property="og:image" content="https://t.me/romi4567/123.jpg"> 
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://t.me/romi4567/123.jpg"> 
+    <meta name="theme-color" content="#8f00ff">
+    <style>
+        :root {
+            --poppo-bg: #0C041C;           
+            --poppo-card: #180B30;         
+            --poppo-purple: #A146FC;       
+            --poppo-pink: #FF007F;         
+            --text-main: #FFFFFF;          
+            --text-sub: #A596BF;           
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: var(--poppo-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        p, li, .card p, .section-desc, .info-highlight-box ul li {
+            font-weight: bold;
+        }
+        header {
+            background-color: var(--poppo-card);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(161, 70, 252, 0.15);
+            transition: all 0.4s ease;
+            height: 60px;
+        }
+        header.scrolled {
+            height: 50px;
+            padding: 5px 5%;
+            background-color: rgba(24, 11, 48, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+        header.scrolled .logo {
+            opacity: 0;
+            visibility: hidden;
+            width: 0;
+            transform: translateX(-20px);
+        }
+        .logo span {
+            color: var(--poppo-pink);
+        }
+        nav {
+            margin-left: auto;
+            transition: all 0.3s ease;
+        }
+        header.scrolled nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 13px;
+            padding: 8px 14px;
+            background-color: rgba(161, 70, 252, 0.15);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: var(--poppo-pink);
+            box-shadow: 0 4px 12px rgba(255, 0, 127, 0.4);
+            transform: translateY(-2px);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .scroll-animate {
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .scroll-animate.active {
+            opacity: 1;
+            animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+        .hero {
+            padding: 80px 5% 60px 5%;
+            text-align: center;
+            background: linear-gradient(180deg, var(--poppo-card), var(--poppo-bg));
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .hero h4 {
+            font-size: 16px;
+            color: var(--text-sub);
+            max-width: 750px;
+            margin: 0 auto 25px auto;
+        }
+        .main-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--poppo-pink), var(--poppo-purple));
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 35px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(255, 0, 127, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .main-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 0, 127, 0.6);
+        }
+        
+        /* የዋና ቪዲዮዎች እስታይል */
+        .video-wrapper {
+            max-width: 950px;
+            margin: 25px auto;
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 3px solid var(--poppo-purple);
+            box-shadow: 0 0 25px rgba(161, 70, 252, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .video-wrapper:hover {
+            transform: scale(1.01);
+            border-color: var(--poppo-pink);
+            box-shadow: 0 0 30px rgba(255, 0, 127, 0.5);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* የካርድ ውስጥ ቪዲዮዎች እስታይል (አዲስ የተጨመረ) */
+        .card-video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 15px;
+            border: 2px solid rgba(161, 70, 252, 0.5);
+            background-color: #000;
+        }
+        .card-video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .info-highlight-box {
+            background: rgba(161, 70, 252, 0.1);
+            border: 1px solid var(--poppo-purple);
+            max-width: 650px;
+            margin: 30px auto 0 auto;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: left;
+        }
+        .info-highlight-box h4 {
+            color: var(--poppo-pink);
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .info-highlight-box ul {
+            list-style-type: none;
+        }
+        .info-highlight-box ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            position: relative;
+            padding-left: 20px;
+            color: #ffffff;
+        }
+        .info-highlight-box ul li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--poppo-pink);
+        }
+        section {
+            padding: 70px 8%;
+        }
+        section h2 {
+            font-size: 28px;
+            color: var(--poppo-purple);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .section-desc {
+            text-align: center;
+            color: var(--text-sub);
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
+        }
+        .card {
+            background-color: var(--poppo-card);
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid var(--poppo-purple);
+            box-shadow: 0 0 15px rgba(161, 70, 252, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--poppo-pink);
+            box-shadow: 0 15px 30px rgba(255, 0, 127, 0.3);
+        }
+        .card-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            background-color: rgba(161, 70, 252, 0.05);
+            border-bottom: 2px solid var(--poppo-pink);
+            transition: all 0.3s ease;
+        }
+        .card:hover .card-img {
+            transform: scale(1.02);
+        }
+        .card h3 {
+            font-size: 24px;
+            color: var(--poppo-pink);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #ffffff;
+            font-size: 15px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .dl-container {
+            max-width: 650px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+            background: linear-gradient(135deg, #1A0933, #2D1154);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px dashed var(--poppo-purple);
+        }
+        .dl-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .dl-btn {
+            display: inline-block;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+        .dl-btn:hover {
+            background-color: #00a2f3;
+            transform: translateY(-2px);
+        }
+        .contact-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .c-btn {
+            text-decoration: none;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 255px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .btn-tg { background-color: #229ED9; }
+        .btn-wa { background-color: #25D366; }
+        .btn-yt { background-color: #FF0000; }
+        .btn-tt { background-color: #010101; border: 1px solid #fff; }
+        .c-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+        }
+        footer {
+            background-color: var(--poppo-card);
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(161, 70, 252, 0.1);
+            font-size: 13px;
+            color: var(--text-sub);
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 12px;
+                gap: 10px;
+            }
+            header.scrolled {
+                height: auto;
+                padding: 10px;
+            }
+            header.scrolled .logo {
+                display: none;
+            }
+            nav {
+                margin-left: 0;
+            }
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 6px;
+            }
+            nav ul li a {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            .hero h1 { font-size: 26px; }
+            section { padding: 40px 5%; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="logo">GREAT <span>FAM</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">ዋናው ገጽ</a></li>
+                <li><a href="#download">ለማውረድ</a></li>
+                <li><a href="#education">የስራ ዘርፎች</a></li>
+                <li><a href="#contact">እኛን ለማግኘት</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1 class="scroll-animate active">እንኳን ወደ Great Fam በሰላም መጡ!</h1>
+        <h4 class="scroll-animate active">የ website አጠቃቀም ከስር ባለው video ይመልከቱ  👇</h4>
+        
+        <div class="video-wrapper scroll-animate active">         
+            <iframe 
+                src="https://www.youtube.com/embed/iRZOKosFHW8" 
+                title="የድረ-ገጽ አጠቃቀም መመሪያ" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+            
+        <div class="info-highlight-box scroll-animate active">
+            <h4>የድረ-ገጹ ዋና ጥቅሞች</h4>
+            <ul>
+                <li>poppo live ያሉትን የገንዘብ አሰራር መንገዶች በ video የተጋዘ ትምህርት ጋር</li>
+                <li>በቀን በትንሹ ከ1000 ብር ጀምሮ በቀን እስከ 30,000 ብር የማግኘት እድል አለዎት እንደ ጥረቶ </li>
+                <li>ከመጀመሪያው ከምዝገባው ጀምሮ እስከ ትልቅ ገንዘብ አሰራር ደረጃ በደረጃ በቪዲዮ እና ምስል የታገዘ ማብራሪያ</li>
+                <li>ምንም አይነት ቅድሚያ ክፍያ (investment) አያስፈልገውም ስልክ እና internet በቂ ናቸው</li>
+                <li>የሰራነውን ገንዘብ በቀላሉ በTelebirr ወይም  በ ንግድ Bank እና በማንኛውም የግል ባንኮች እንዲሁም በ USDT በቀላሉ ማውጣት (Withdraw) ይቻላል ይህንም በ video ያሳያል</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="download">
+        <h2 class="scroll-animate">አፕሊኬሽኑን ያውርዱ</h2>
+        <p class="section-desc scroll-animate">ስራውን ለመጀመር ከታች ያለውን ቪዲዮ በትክክል አይተው ከተረዱ በኋላ :: ሊንኩን ነክተው ሲመዘገቡ የፊት አሻራና ኤጀንት አይዲ በትክክል ሲያስገቡ ለስራው ብቁ የሚያደርጎትን ሂደት ያጠናቅቃሉ። ስለ አሰራሩ ለማወቅ ደግሞ ከታች በየደረጃቸው የቀረቡትን ቪዲዮዎች በመከተል ውጤታማ ስራ ለመስራት የሚያስችል እውቀት ይይዛሉ ። 👇።</p>       
+
+        <div class="video-wrapper scroll-animate">         
+            <iframe 
+                src="https://www.youtube.com/embed/cUuUtjmzvZ4" 
+                title="የድረ-ገጽ አጠቃቀም መመሪያ" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="dl-container scroll-animate">
+            <h3>Poppo Live App Download</h3>
+            <p style="color: var(--text-sub); margin-top: 10px; margin-bottom: 15px;">አፑን በቀላሉ አውርደው አካውንት ለመክፈትና ለመመዝገብ ሊንኩን ይጫኑ።</p>
+           
+            <div class="dl-grid">
+                <a href="https://invite-poppo.com/4dJc3T" class="dl-btn" target="_blank">📥 Poppo Live አማራጭ 1</a>
+                <a href="https://invite-poppo.com/2hhme4" class="dl-btn" target="_blank">📥 Poppo Live አማራጭ 2</a>   
+                <a href="https://invite-poppo.com/txSQtT" class="dl-btn" target="_blank">📥 Poppo Live አማራጭ 3</a> 
+                <a href="https://invite-poppo.com/cSWjT2" class="dl-btn" target="_blank">📥 Poppo Live አማራጭ 4</a>
+            </div>
+            <p style="font-size:12px; color:var(--text-sub); margin-top:10px;">My ID: 54816200</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="scroll-animate">Poppo Live የገንዘብ መስሪያ መንገዶች</h2>
+        <p class="section-desc scroll-animate">በአፑ ውስጥ ያሉትን 6 ዋና ዋና የገቢ ማግኛ መንገዶች ከታች ባሉት ዝርዝሮች ላይ መመልከት ይችላሉ።</p>
+        
+        <div class="grid-container">
+            <!-- 1. Agent Card -->
+            <div class="card scroll-animate">
+                <div>
+                    <img src="https://i.ibb.co/yBSHH0mf/Screenshot-20260618-172003.jpg" alt="Agent" class="card-img">
+                    <h3>1. ኤጀንት (Agent) </h3>
+                    <p>የኤጀንት ስራ በPoppo Live ላይ ከፍተኛ ገቢ ማግኘት የሚቻልበት ዋናው እና ትልቁ ክፍል ነው። ይህ ስራ አዳዲስ Host ሰዎችን ከማንኛውም ቦታ በማምጣት፣ በራስዎ የኤጀንት ID ስር በመመዝገብ እና በማሰልጠን የሚሰራ ድንቅ የቢዝነስ ዘርፍ ነው።</p>
+                    
+                    <p style="font-size: 14px; background: rgba(161, 70, 252, 0.15); padding: 12px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--poppo-purple);">
+                        <b>💡 የአሸናፊነት ምስጢር፦</b> ፖፖ ላይ እጅግ በጣም ብዙ ገንዘብ መስራት የሚያስችለው ዋናው ክፍል ይህ በመሆኑ፣ እያንዳንዱን አሰራር ጠልቆ ማወቅ ያስፈልጋል። አዳዲስ ሆስቶችን በቀላሉ የምታገኙባቸው 3 ዋና መንገዶች ከኔ ተሞክሮ ልንገሪችሁ 3<sup>ኛው</sup> በጣም ቀላል ነው፦
+                    </p>
+                    
+                    <h4 style="font-size: 16px; color: var(--poppo-pink); font-weight: bold; margin-bottom: 10px;">አዳዲስ Host ሰዎችን ለማግኘት 3ቱ መንገዶች፦</h4>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>1. ከአካባቢዎ ሰዎች (ጎረቤት/ቤተሰብ)፦</b> የቅርብ ሰዎችን መጋበዝ እና የእርስዎን ID አስገብተው እንዲመዘገቡ በማድረግ የመጀመሪያ ቡድንዎን መመስረት ይችላሉ ።</p>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>2. ከማህበራዊ ሚዲያ (Social Media)፦</b> በቲክቶክ እና ዩቲዩብ ላይ ስለ ፖፖ አጠቃቀም አጫጭር ቪዲዮዎችን በመስራት በርካታ ሆስቶችን  መሳብ ይችላሉ ።</p>
+                    <p style="font-size: 14px; margin-bottom: 15px;"><b>3. ከPoppo Live መድረክ ራሱ፦</b> በአፕሊኬሽኑ ውስጥ ላይቭ ላይ በመቀመጥ፣ አዲስ የሚገቡ (Newbie) ሆስቶችን በመቀበልና በማገዝ ወደ እርስዎ ኤጀንሲ ማስገባት ይችላሉ ።</p>
+                    
+                    <p style="font-size: 14px; color: var(--text-sub); font-style: italic;">እያንዳንዱን አሰራር ጠልቆ መረዳት ያስፈልጋል ስለ agent በዚህ ጽሁፍ ብቻ መግለጽ አይቻልም ውስጥ ብዙ ክፍሎች አሉት ሙሉ መረጃ በ ቪዲዮ መመልከት ይችላሉ ።</p>
+                </div>
+                <!-- ቪዲዮው እዛው እንዲጫወት ተስተካክሏል -->
+                <div class="card-video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/cUuUtjmzvZ4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 2. Live Host Card -->
+            <div class="card scroll-animate">
+                <div>
+                    <img src="https://i.ibb.co/GQsV97yq/Screenshot-20260618-171922.jpg" alt="Live Host" class="card-img">
+                    <h3>2. ግፍት ተቀባይ (best sallery Host)</h3>
+                    <p> ጊፍት  ሆስት (best sallery Host) ስራ በተለይ ላልተገደበ ገቢ በር የሚከፍት ሌላው ትልቅ የፖፖ ላይቭ ክፍል ነው። ይህ ስራ የራስዎን ልዩ ችሎታ  በመጠቀም (በመጨዋወት፣ በመዘመር፣ ግጥም በማንበብ፣ ወይም ከተመልካቾች ጋር ጥሩ ጊዜ በማሳለፍ) ሰዎችን እያዝናኑ ዲጂታል ስጦታዎችን (Gifts) በመቀበል የሚሰራ ስራ ነው።</p>
+                    
+                    <p style="font-size: 14px; background: rgba(255, 0, 127, 0.1); padding: 12px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--poppo-pink);">
+                        <b>💡 ማስታወሻ፦</b> ተመልካቾች የሚልኩላችሁ ስጦታዎች በቀጥታ ወደ ኮይን (Coins) የሚቀየሩ ሲሆን፣ ይህም በኋላ ላይ በቀላሉ ወደ እውነተኛ ገንዘብ (ዶላር) ተቀይሮ በባንክ ወይም በቴሌብር ይወጣል።
+                    </p>
+                    
+                    <h4 style="font-size: 16px; color: var(--poppo-purple); font-weight: bold; margin-bottom: 10px;">Host በመሆን እንዴት ስኬታማ መሆን ይቻላል?</h4>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>1. ተከታታይነት (Consistency)፦</b> በየቀኑ በተወሰነ ቋሚ ሰዓት ላይቭ ላይ መገኘት ተመልካቾች የእናንተን ሰዓት አውቀው ሁልጊዜ እንዲመጡ ያደርጋል።</p>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>2. ከተመልካች ጋር መግባባት፦</b> ወደ ላይቭዎ የሚገቡ ሰዎችን ስማቸውን እየጠሩ ሰላም ማለት የረጅም ጊዜ ደጋፊ (Gifter) ያደርጋቸዋል።</p>
+                    <p style="font-size: 14px; margin-bottom: 15px;"><b>3. የኤጀንሲ እገዛ፦</b> በትክክለኛ እና ጠንካራ ኤጀንት ስር መሆን በፍጥነት ታዋቂ ለመሆን ትልቅ እገዛ ያደርጋል።</p>
+                </div>
+                <!-- ቪዲዮው እዛው እንዲጫወት ተስተካክሏል -->
+                <div class="card-video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/cUuUtjmzvZ4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 3. Gamer Card -->
+            <div class="card scroll-animate">
+                <div>
+                    <img src="https://i.ibb.co/fzBD4wF8/Screenshot-20260618-171828.jpg" alt="Gamer" class="card-img">
+                    <h3>3. ጌመር (Gamer) — በጨዋታ ኮይን ይሰብስቡ!</h3>
+                    <p>በፖፖ አፕሊኬሽን ውስጥ ካሉት በጣም አዝናኝ እና ፈጣን የገቢ ምንጮች አንዱ የጌመርነት (Gaming) ዘርፍ ነው። በአፑ ውስጥ ያሉትን የተለያዩ ማራኪ የጨዋታ አማራጮች (ለምሳሌ፦ Lucky Wheel, Fruit Roulette እና ሌሎችም) በስልት በመጫወት በየቀኑ በሚሊዮን የሚቆጠሩ ኮይኖችን በቀላሉ መሠብሰብ የሚቻልበት ድንቅ የስራ መስመር ነው።</p>
+                    
+                    <p style="font-size: 14px; background: rgba(161, 70, 252, 0.15); padding: 12px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--poppo-purple);">
+                        <b>💡 የጌመርነት ምስጢር፦</b> ጨዋታዎችን በዘፈቀደ ከመጫወት ይልቅ የአሸናፊነት እድልን የሚያሰሉ ስልቶችን መከተል እና ትርፍን ለማስጠበቅ መቼ ማቆም እንዳለቦት ማወቅ ትልቅ ችሎታ ነው!
+                    </p>
+                    
+                    <h4 style="font-size: 16px; color: var(--poppo-purple); font-weight: bold; margin-bottom: 10px;">ጌመር በመሆን ስኬታማ ለመሆን፦</h4>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>1. ስልታዊ መሆን (Strategy)፦</b> ጨዋታዎቹን ከመጀመርዎ በፊት ህጎቹን መረዳት የአሸናፊነት እድልዎን ይጨምራል።</p>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>2. ወሰን ማወቅ (Risk Management)፦</b> ስኬታማ ጌመር ማለት በትልቅ ትርፍ ላይ እያለ መቼ ማቆም እንዳለበት የሚያውቅ ብልህ ተጫዋች ነው።</p>
+                    <p style="font-size: 14px; margin-bottom: 15px;"><b>3. ተሞክሮን መጠቀም (Experience)፦</b> ጨዋታዎቹን ደጋግመው ሲጫወቱ እና ልምድ ሲያካብቱ፣ የትርፍ መጠንዎ በዚያው ልክ እያደገ ይሄዳል።</p>
+                </div>
+                <!-- ቪዲዮው እዛው እንዲጫወት ተስተካክሏል -->
+                <div class="card-video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/cUuUtjmzvZ4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 4. Video/Photo Post Card -->
+            <div class="card scroll-animate">
+                <div>
+                    <img src="https://i.ibb.co/Rpy6Txvr/Screenshot-20260618-171753.jpg" alt="Quality Content" class="card-img">
+                    <h3>4. የቪዲዮ እና ፎቶ ፖስት</h3>
+                    <p>እንደ ታዋቂው የቲክቶክ አሰራር ሁሉ፣ በፖፖ ላይ ጥራታቸውን የጠበቁ አጫጭር ቪዲዮዎችን እና ማራኪ ፎቶዎችን በመልቀቅ ተከታዮችን ማፍራት እና ገቢ ማግኘት ይቻላል። ይህ ስራ ተወዳጅነትን በማግኘት በአድናቂዎች አማካኝነት ስጦታዎችን (Gifts) ለመቀበል ይረዳል።</p>
+                    
+                    <p style="font-size: 14px; background: rgba(255, 0, 127, 0.1); padding: 12px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--poppo-pink);">
+                        <b>💡 የስኬት ቁልፍ፦</b> በየቀኑ አዳዲስ ፖስቶችን በማድረግ እና ከተከታዮችዎ ጋር በመግባባት ተወዳጅነትዎን ማሳደግ ይችላሉ። ብዙ እይታ (Views) ባገኙ ቁጥር የሰዎችን ቀልብ የመሳብ እድልዎ ይጨምራል!
+                    </p>
+                    
+                    <h4 style="font-size: 16px; color: var(--poppo-purple); font-weight: bold; margin-bottom: 10px;">በዚህ ዘርፍ ውጤታማ ለመሆን፦</h4>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>1. ጥራት ያለው ይዘት፦</b> ጥራታቸው የጠበቁ ምስሎች እና ቪዲዮዎች ብዙ እይታ እንዲያገኙ ያደርጋል።</p>
+                    <p style="font-size: 14px; margin-bottom: 15px;"><b>2. ተሳትፎ፦</b> ኮሜንት ለሚጽፉልዎት ሰዎች ምላሽ በመስጠት የረጅም ጊዜ ደጋፊዎችን ማፍራት ይችላሉ።</p>
+                </div>
+                <!-- ቪዲዮው እዛው እንዲጫወት ተስተካክሏል -->
+                <div class="card-video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/cUuUtjmzvZ4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 5. Coin Seller Card -->
+            <div class="card scroll-animate">
+                <div>
+                    <img src="https://i.ibb.co/NdwGSydy/Screenshot-20260618-171655.jpg" alt="Coin Seller" class="card-img">
+                    <h3>5. ኮይን ሻጭ (Coin Seller)</h3>
+                    <p>ይህ ስራ በፖፖ ላይ ህጋዊ ነጋዴ ወይም አከፋፋይ የመሆን ስራ ነው። ኮይኖችን በርካሽ ዋጋ በመግዛት፣ መድረኩ ላይ ላሉት ሆስቶች እና ተጠቃሚዎች መልሶ በመሸጥ በመሃል ካለው የዋጋ ልዩነት ከፍተኛ ትርፍ ማግኘት ይቻላል።</p>
+                    
+                    <p style="font-size: 14px; background: rgba(161, 70, 252, 0.15); padding: 12px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--poppo-purple);">
+                        <b>💡 የንግዱ መርህ፦</b> ፈጣን እና ታማኝ አገልግሎት በመስጠት ብዙ ደንበኞችን ማፍራት ይቻላል። ሁልጊዜ ኮይን የሚፈልጉ ሆስቶች ስላሉ የማይቋረጥ አስተማማኝ ገቢ አለው።
+                    </p>
+                    
+                    <h4 style="font-size: 16px; color: var(--poppo-purple); font-weight: bold; margin-bottom: 10px;">የኮይን ሻጭ ዋና ጥቅሞች፦</h4>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>1. ቋሚ ፍላጎት፦</b> መድረኩ ላይ በየቀኑ አዳዲስ ተጠቃሚዎች ስለሚገቡ የገዢ እጥረት የለም።</p>
+                    <p style="font-size: 14px; margin-bottom: 15px;"><b>2. የዋጋ ትርፍ፦</b> ከትልቅ አከፋፋዮች በርካሽ ተረክቦ ችርቻሮ በመሸጥ ጥሩ ትርፍ ማግኘት።</p>
+                </div>
+                <!-- ቪዲዮው እዛው እንዲጫወት ተስተካክሏል -->
+                <div class="card-video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/cUuUtjmzvZ4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 6. Invitation Card -->
+            <div class="card scroll-animate">
+                <div>
+                    <img src="https://i.ibb.co/qMcDNkmW/Screenshot-20260618-171530.jpg" alt="Invitation" class="card-img">
+                    <h3>6. ሰዎችን መጋበዝ (Invitation)</h3>
+                    <p>ይህ ስራ የእርስዎን የግብዣ ሊንክ (Referral Link) በመጠቀም ሰዎችን ወደ አፑ በማስገባት ኮሚሽን ማግኘት ነው። ይህ ስራ ያለ ምንም ድካም ገቢ ለማግኘት መንገድ ነው።</p>
+                    
+                    <p style="font-size: 14px; background: rgba(255, 0, 127, 0.1); padding: 12px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--poppo-pink);">
+                        <b>💡 ለምን ግብዣ?</b> የጋበዙት ሰው በሚሰራው ስራ ልክ እናንተም የትርፍ ድርሻ ታገኛላችሁ። ሊንክዎን ለጓደኞችዎ እና ለማህበራዊ ሚዲያ ተከታዮችዎ በመላክ ብቻ የሚሰራ ቀላል አሰራር ነው።
+                    </p>
+                    
+                    <h4 style="font-size: 16px; color: var(--poppo-purple); font-weight: bold; margin-bottom: 10px;">የግብዣ አሰራር ጥቅሞች፦</h4>
+                    <p style="font-size: 14px; margin-bottom: 8px;"><b>1. የረጅም ጊዜ ኮሚሽን፦</b> የጋበዟቸው ሰዎች በአፑ ውስጥ እስካሉ ድረስ ገቢዎ ይቀጥላል።</p>
+                    <p style="font-size: 14px; margin-bottom: 15px;"><b>2. ነፃ አጀማመር፦</b> ምንም አይነት ካፒታል ወይም ቅድመ ክፍያ ሳይጠይቅ ሊንክ በማጋራት ብቻ የሚሰራ።</p>
+                </div>
+                <!-- ቪዲዮው እዛው እንዲጫወት ተስተካክሏል -->
+                <div class="card-video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/cUuUtjmzvZ4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: rgba(24, 11, 48, 0.4);">
+        <h2 class="scroll-animate">እኛን ያግኙን</h2>
+        <p class="section-desc scroll-animate">ማንኛውም ጥያቄ ካለዎት ወይም ተጨማሪ እገዛ ከፈለጉ በፈለጉት ማህበራዊ ሚዲያ ያግኙን </p>
+        <div class="contact-grid scroll-animate">
+            <a href="https://t.me/romi4567" class="c-btn btn-tg" target="_blank">Telegram</a>
+            <a href="https://wa.me/251955266523" class="c-btn btn-wa" target="_blank">WhatsApp</a>
+            <a href="https://youtube.com/watch?v=cUuUtjmzvZ4" class="c-btn btn-yt" target="_blank">YouTube</a>
+            <a href="#" class="c-btn btn-tt" target="_blank">TikTok</a>
+        </div>
+    </section>
+
+    <footer>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+            <p><b>created by WEB DESIGNER NAHOM</b></p>
+            <a href="https://t.me/romi4567" target="_blank" style="text-decoration: none; display: inline-block; vertical-align: middle;">
+                <svg viewBox="0 0 24 24" width="40" height="40" style="background-color: #0088cc; border-radius: 50%; padding: 5px; fill: white;">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.05-.2s-.14-.07-.2-.05c-.09.02-1.5.95-4.28 2.78-.4.27-.76.4-1.09.39-.36-.01-1.05-.2-1.56-.37-.63-.2-1.13-.31-1.08-.66.02-.13.22-.27.61-.41 2.4-1.06 4.02-1.77 4.86-2.12 2.31-.97 2.78-1.13 3.1-1.14.07 0 .22.01.32.09.09.07.12.17.13.23.01.06.01.12.01.18z"/>
+                </svg>
+            </a>
+        </div>
+        <p style="color:#ff3333; text-align: center;"><b>ያለፈቃድ ዳግም መሸጥ ወይም ማባዛት በኢትዮጵያ የቅጂ መብት ህግ በጥብቅ የተከለከለ ነው።</b></p> 
+    </footer>
+
+    <script>
+        // Header Scroll Effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for Smooth Scroll Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
